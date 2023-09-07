@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Simple Battle City</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main>  
+    <section class="game_about">
+        <img class="logo" src="img/logo.png">
+        <h1>SIMPLE BATTLE CITY</h1>
+    </section>
+    <section id="game-field">
+      <div id="game-map"></div>
+      <div class="modal" id="modal">
+        <b><p class="modal-text" id="modal-text">you win!</p></b>
+        <img src="img/button.png" class="modal-button" id="modal-button" />
+      </div>
+    </section>
+
+    <section id="legend">
+      <h2>GAME INFO</h2>
+      <ul class="legend-list">
+        <li class="legend-item">
+          <p class="legend-text">PLAYER LIFE:</p>
+          <div id="player_life_counter">
+          </div>
+        </li>
+        <li class="legend-item">
+          <p class="legend-text">ENEMY:</p>
+          <div id="enemy_life_counter">
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+<script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+
+html {
+    color: #fff;
+    background: #1c1a1a;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: monospace;
+}
+
+.game-object {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+.game-object__player-tank {
+    background: url('../img/player-tank.png');
+    background-size: contain;
+    z-index: 3;
+}
+
+.game-object__enemy-tank {
+    background: url('../img/enemy-tank.png');
+    background-size: contain;
+    z-index: 3;
+} 
+
+.game-object__wall {
+    background: url('../img/wall.png');
+    background-size: contain;
+}
+.game-object__bullet {
+    width: 8px;
+    height: 8px;
+    background: url('../img/bullet.png');
+    background-size: cover;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+#game-field {
+    position: relative;
+    min-width: 832px;
+    margin-top: 20px;
+    width: 832px;
+}
+#game-map {
+    position: relative;
+    width: 832px;
+    height: 896px;
+    background: #000;
+    overflow: hidden;
+}
+#legend {
+    margin-left: 10px;
+    width: 25%;
+}
+#legend .player_life {
+    width: 15%;
+}
+#legend .enemy_life {
+    width: 13%
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    background: #1c1a1a;
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+.modal-button {
+    width: 50%;
+}
+.modal-text {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.game_about {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo {
+    width: 70%;
+}
+
+.legend-list {
+    padding: 0;
+}
+.legend-text {
+    font-size: 1.5em;
+}
+
+
+.explosion {
+    animation: explosion 0.5s linear;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+@keyframes explosion {
+    10% {
+        background: url(../img/explosion/sprite_1.png);
+    }
+    20% {
+        background: url(../img/explosion/sprite_2.png);
+    }
+    30% {
+        background: url(../img/explosion/sprite_3.png);
+
+    }
+    40% {
+        background: url(../img/explosion/sprite_4.png);
+
+    }
+    60% {
+        background: url(../img/explosion/sprite_5.png);
+
+    }
+    80% {
+        background: url(../img/explosion/sprite_6.png);
+
+    }
+    100% {
+        background: url(../img/explosion/sprite_7.png);
+
+    }
+}
